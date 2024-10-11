@@ -21,6 +21,9 @@ namespace CarRentalManagementSystem_V1
             rentalPrice = RentalPrice;
         }
 
-        
+        public virtual string ToString()
+        {
+            return $"Id:{carId},Brand:{brand},Model:{model},RentalPrice:{rentalPrice}";
+        }
     }
 }
