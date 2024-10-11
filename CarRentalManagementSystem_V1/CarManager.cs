@@ -44,5 +44,15 @@ namespace CarRentalManagementSystem_V1
             cars.Remove(car);
             Console.WriteLine("Car deleted successfully");
         }
+
+        public decimal ValidateCarRentalPrice()
+        {
+            decimal Price;
+            while (!decimal.TryParse(Console.ReadLine(), out Price) || Price <= 0)
+            {
+                Console.WriteLine("Enter positive Value");
+            }
+            return Price;
+        }
     }
 }

@@ -21,9 +21,11 @@ namespace CarRentalManagementSystem_V1
             rentalPrice = RentalPrice;
         }
 
-        public virtual string ToString()
+        public override string ToString()
         {
             return $"Id:{carId},Brand:{brand},Model:{model},RentalPrice:{rentalPrice}";
         }
+
+        
     }
 }
