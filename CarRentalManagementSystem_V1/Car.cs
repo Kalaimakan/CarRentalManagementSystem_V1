@@ -8,10 +8,10 @@ namespace CarRentalManagementSystem_V1
 {
     public class Car
     {
-        private string carId;
-        private string brand;
-        private string model;
-        private decimal rentalPrice;
+        public string carId;
+        public string brand;
+        public string model;
+        public decimal rentalPrice;
 
         public Car(string CarId, string Brand, string Model, decimal RentalPrice)
         {
