@@ -13,6 +13,14 @@ namespace CarRentalManagementSystem_V1
         private string model;
         private decimal rentalPrice;
 
-       
+        public Car(string CarId, string Brand, string Model, decimal RentalPrice)
+        {
+            carId = CarId;
+            brand = Brand;
+            model = Model;
+            rentalPrice = RentalPrice;
+        }
+
+        
     }
 }
